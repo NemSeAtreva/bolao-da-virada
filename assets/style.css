@@ -69,18 +69,20 @@ body:not(:has(.barra-fixa)) .app { padding-bottom: 28px; }
 .capa { display: block; width: 100%; height: auto; }
 
 /* Cartão branco encostado no banner */
+/* Faixa preta presa ao banner (sem flutuar), com detalhe amarelo na lateral */
 .cartao {
-  position: relative;
-  margin: -26px 12px 0;
-  background: #fff;
-  border-radius: 14px;
-  padding: 14px 16px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  background: var(--preto);
+  border-left: 5px solid var(--amarelo);
+  padding: 12px 14px 14px;
 }
+.cartao h1 { color: #fff; }
+.cartao p { color: #c3c6d1; }
+.cartao b { color: #fff; }
+.cartao .linha-verde { color: var(--amarelo); font-weight: 600; font-size: 13px; }
 .selo {
   display: inline-block;
-  background: var(--preto);
-  color: var(--amarelo);
+  background: var(--amarelo);
+  color: var(--sobre-amarelo);
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
