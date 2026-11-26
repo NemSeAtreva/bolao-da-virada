@@ -6,28 +6,33 @@
   <title>Escolha seu grupo | Bolão da Virada</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=4" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css?v=5" />
 </head>
 <body>
-  <div class="app">
-    <header class="topo">
-      <a class="marca" href="index.html">BOLÃO DA VIRADA</a>
+  <header class="topo">
+    <div class="dentro">
+      <a class="marca" href="index.html">BOLÃO DA <span>VIRADA</span></a>
       <a class="voltar" href="index.html">‹ Voltar</a>
-    </header>
+    </div>
+  </header>
+  <div class="alerta">Compre pelo link do seu grupo, com no mínimo <b>200 cotas</b>, para entrar no bolão.</div>
 
-    <img class="banner" src="assets/banner.jpg" width="1402" height="1122" alt="Bolão da Virada" />
+  <div class="app">
+    <div class="capa">
+      <img src="assets/banner.jpg" width="1402" height="1122" alt="Bolão da Virada" />
+      <div class="legenda">
+        <h1>Escolha seu grupo</h1>
+        <div class="sub">Você vai direto para a página da ação</div>
+      </div>
+    </div>
 
-    <section class="bloco">
-      <h1>Escolha seu grupo</h1>
-      <p>Ao clicar, você vai para a página da ação. Lembre-se: o pedido mínimo é de <b>200 cotas</b>.</p>
-    </section>
-
-    <section class="bloco">
+    <div class="conteudo">
+      <h2>👥 Grupos</h2>
       <div class="grupos" id="grupos"></div>
-    </section>
 
-    <p class="aviso">Proibida a participação de menores de 18 anos.</p>
+      <p class="aviso">Proibida a participação de menores de 18 anos.</p>
+    </div>
   </div>
 
   <script src="assets/config.js?v=2"></script>
