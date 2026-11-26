@@ -219,7 +219,11 @@ b { color: var(--titulo); font-weight: 600; }
 .faq details p { font-size: 14px; padding-bottom: 14px; }
 
 /* Grade de grupos */
-.grupos { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+.grupos { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+@media (max-width: 600px) {
+  .grupos { grid-template-columns: repeat(2, 1fr); }
+  .grupos .grupo:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
 .grupo {
   display: flex;
   flex-direction: column;
@@ -291,3 +295,6 @@ b { color: var(--titulo); font-weight: 600; }
   .destaque strong { font-size: 18px; }
   .destaque span { font-size: 11px; }
 }
+
+/* Sem barra fixa, não precisa do espaço extra embaixo */
+body:not(:has(.barra-fixa)) .app { padding-bottom: 40px; }
