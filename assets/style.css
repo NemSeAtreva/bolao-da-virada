@@ -11,6 +11,8 @@
   --cinza: #9a9cab;
   --linha: #ececef;
   --suave: #f5f5f7;
+  --faixa: #f1f2f5;
+  --faixa-borda: #e3e5ea;
   --coluna: 520px;
 }
 
@@ -71,9 +73,9 @@ body:not(:has(.barra-fixa)) .app { padding-bottom: 28px; }
 /* Cartão branco encostado no banner */
 /* Faixa cinza-clara presa ao banner (sem flutuar), com detalhe amarelo na lateral */
 .cartao {
-  background: #f1f2f5;
+  background: var(--faixa);
   border-left: 5px solid var(--amarelo);
-  border-bottom: 1px solid #e3e5ea;
+  border-bottom: 1px solid var(--faixa-borda);
   padding: 12px 14px 14px;
 }
 .cartao h1 { color: var(--titulo); }
@@ -115,13 +117,15 @@ h1 { font-size: 18px; font-weight: 800; color: var(--titulo); line-height: 1.25;
 /* Blocos pretos */
 .blocos { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 14px; }
 .bloco-preto {
-  background: var(--preto);
+  background: var(--faixa);
+  border: 1px solid var(--faixa-borda);
+  border-left: 5px solid var(--amarelo);
   border-radius: 10px;
   text-align: center;
   padding: 12px 6px;
 }
-.bloco-preto strong { display: block; font-size: 24px; font-weight: 800; color: var(--amarelo); line-height: 1.1; }
-.bloco-preto span { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #c3c6d1; }
+.bloco-preto strong { display: block; font-size: 24px; font-weight: 800; color: var(--titulo); line-height: 1.1; }
+.bloco-preto span { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--texto); }
 
 /* Títulos */
 h2 { font-size: 16px; font-weight: 700; color: var(--titulo); margin: 24px 0 10px; }
@@ -168,18 +172,19 @@ h2 { font-size: 16px; font-weight: 700; color: var(--titulo); margin: 24px 0 10p
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: var(--preto);
-  border: 2px solid var(--preto);
+  background: var(--faixa);
+  border: 1px solid var(--faixa-borda);
+  border-left: 5px solid var(--amarelo);
   border-radius: 12px;
   padding: 14px 10px 10px;
   transition: border-color 0.15s;
 }
 .grupo:last-child:nth-child(odd) { grid-column: 1 / -1; }
-.grupo:hover { border-color: var(--amarelo); }
-.g-rotulo { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: #c3c6d1; }
-.g-num { font-size: 38px; font-weight: 900; line-height: 1; color: var(--amarelo); margin: 2px 0 6px; }
-.g-premio { font-size: 12px; color: #c3c6d1; margin-bottom: 10px; }
-.g-premio b { color: #fff; }
+.grupo:hover { border-color: var(--amarelo); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08); }
+.g-rotulo { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: var(--texto); }
+.g-num { font-size: 38px; font-weight: 900; line-height: 1; color: var(--titulo); margin: 2px 0 6px; }
+.g-premio { font-size: 12px; color: var(--texto); margin-bottom: 10px; }
+.g-premio b { color: var(--titulo); }
 .g-cta {
   width: 100%;
   background: var(--amarelo);
@@ -191,8 +196,8 @@ h2 { font-size: 16px; font-weight: 700; color: var(--titulo); margin: 24px 0 10p
 }
 .grupo:hover .g-cta { background: var(--amarelo-hover); }
 .grupo.pendente { cursor: not-allowed; opacity: 0.5; }
-.grupo.pendente:hover { border-color: var(--preto); }
-.grupo.pendente .g-cta { background: #3a3f4b; color: #9a9cab; }
+.grupo.pendente:hover { border-color: var(--faixa-borda); border-left-color: var(--amarelo); box-shadow: none; }
+.grupo.pendente .g-cta { background: #dcdfe5; color: var(--cinza); }
 
 /* Botão fixo */
 .barra-fixa { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; }
