@@ -3,8 +3,9 @@
   --coluna-bg: #1e252f;
   --preto: #000;
   --bloco: #0d1117;
-  --vermelho: #ff3030;
-  --vermelho-hover: #e62020;
+  --destaque: #ffc400;
+  --sobre-destaque: #111;
+  --destaque-hover: #e6b000;
   --texto: #fff;
   --texto-2: #b8bec8;
   --linha: #2c3440;
@@ -36,12 +37,13 @@ b, strong { font-weight: 700; }
   justify-content: space-between;
 }
 .marca { font-weight: 900; font-size: 17px; letter-spacing: 0.03em; font-style: italic; }
-.marca span { color: var(--vermelho); }
+.marca span { color: var(--destaque); }
 .voltar { font-size: 13px; color: var(--texto-2); }
 .voltar:hover { color: #fff; }
 
 .alerta {
-  background: var(--vermelho);
+  background: var(--destaque);
+  color: var(--sobre-destaque);
   text-align: center;
   font-size: 12px;
   padding: 5px 12px;
@@ -65,7 +67,8 @@ body:not(:has(.barra-fixa)) .app { padding-bottom: 24px; }
 }
 .selo {
   display: inline-block;
-  background: var(--vermelho);
+  background: var(--destaque);
+  color: var(--sobre-destaque);
   font-size: 10px;
   font-weight: 700;
   padding: 2px 6px;
@@ -163,15 +166,16 @@ h2 {
 }
 .g-nome { font-size: 15px; font-weight: 700; text-transform: uppercase; }
 .g-cta {
-  background: var(--vermelho);
+  background: var(--destaque);
+  color: var(--sobre-destaque);
   font-weight: 700;
   font-size: 13px;
   padding: 7px 14px;
   border-radius: 5px;
 }
-.grupo:hover .g-cta { background: var(--vermelho-hover); }
+.grupo:hover .g-cta { background: var(--destaque-hover); }
 .grupo.pendente { cursor: not-allowed; opacity: 0.5; }
-.grupo.pendente .g-cta { background: var(--linha); }
+.grupo.pendente .g-cta { background: var(--linha); color: var(--texto-2); }
 
 /* Botão fixo */
 .barra-fixa { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; }
@@ -188,11 +192,12 @@ h2 {
   justify-content: center;
   gap: 8px;
   width: 100%;
-  background: var(--vermelho);
+  background: var(--destaque);
+  color: var(--sobre-destaque);
   font-weight: 700;
   font-size: 16px;
   padding: 12px;
   border-radius: 5px;
 }
-.btn:hover { background: var(--vermelho-hover); }
+.btn:hover { background: var(--destaque-hover); }
 .btn svg { width: 20px; height: 20px; }
