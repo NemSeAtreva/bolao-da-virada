@@ -117,6 +117,61 @@ a { color: inherit; text-decoration: none; }
 .destaque span { font-size: 13px; }
 
 .texto { font-size: 15px; }
+b { color: var(--titulo); }
+
+/* Passo a passo */
+.passos { display: flex; flex-direction: column; gap: 10px; }
+.passo {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 14px;
+}
+.passo .num {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--verde-suave);
+  color: var(--verde);
+  font-weight: 900;
+  display: grid;
+  place-items: center;
+}
+.passo h3 { font-size: 15px; font-weight: 700; color: var(--titulo); }
+.passo p { font-size: 14px; }
+
+/* Caixa de destaque */
+.caixa-destaque {
+  margin-top: 20px;
+  background: #fff7f0;
+  border: 1px solid #ffe2c7;
+  border-radius: 12px;
+  padding: 16px;
+}
+.caixa-destaque strong { display: block; color: var(--laranja-hover); font-size: 16px; font-weight: 900; margin-bottom: 4px; }
+.caixa-destaque p { font-size: 14px; }
+
+/* Perguntas frequentes */
+.faq { display: flex; flex-direction: column; gap: 8px; }
+.faq details { border: 1px solid var(--borda); border-radius: 12px; padding: 0 14px; }
+.faq summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 14px 0;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--titulo);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--verde); font-weight: 900; font-size: 18px; line-height: 1; }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { font-size: 14px; padding-bottom: 14px; }
 
 /* Grade de grupos (estilo "pacotes") */
 .grupos { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
@@ -178,3 +233,8 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-laranja:hover { background: var(--laranja-hover); }
 .btn-laranja .sep { width: 1px; height: 18px; background: rgba(255, 255, 255, 0.5); }
+
+@media (max-width: 420px) {
+  .destaque strong { font-size: 18px; }
+  .destaque span { font-size: 12px; }
+}

@@ -11,11 +11,6 @@ window.BOLAO_CONFIG = {
     { nome: "Grupo 3",  link: "https://cuiudodasorte.com.br/1milhao-79?qtd=200" },
     { nome: "Grupo 4",  link: "https://cuiudodasorte.com.br/1milhao-79?qtd=200" },
     { nome: "Grupo 5",  link: "https://cuiudodasorte.com.br/1milhao-79?qtd=200" },
-    { nome: "Grupo 6",  link: "https://cuiudodasorte.com.br/1milhao-79?qtd=200" },
-    { nome: "Grupo 7",  link: "https://cuiudodasorte.com.br/1milhao-79?qtd=200" },
-    { nome: "Grupo 8",  link: "https://cuiudodasorte.com.br/1milhao-79?qtd=200" },
-    { nome: "Grupo 9",  link: "https://cuiudodasorte.com.br/1milhao-79?qtd=200" },
-    { nome: "Grupo 10", link: "https://cuiudodasorte.com.br/1milhao-79?qtd=200" },
   ],
 
   // true = abre o site da rifa em nova aba; false = abre na mesma aba
