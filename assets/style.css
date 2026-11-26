@@ -61,7 +61,7 @@ b, strong { color: var(--titulo); font-weight: 700; }
   max-width: var(--coluna);
   margin: 0 auto;
   background: #fff;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   padding-bottom: 100px;
 }
 body:not(:has(.barra-fixa)) .app { padding-bottom: 28px; }
@@ -218,3 +218,6 @@ h2 { font-size: 16px; font-weight: 700; color: var(--titulo); margin: 24px 0 10p
 }
 .btn:hover { background: var(--amarelo-hover); }
 .btn svg { width: 20px; height: 20px; }
+
+.link-voltar { display: block; text-align: center; margin-top: 16px; font-size: 14px; font-weight: 700; color: var(--titulo); }
+.link-voltar:hover { text-decoration: underline; }
