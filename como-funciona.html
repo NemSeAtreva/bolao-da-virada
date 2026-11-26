@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Como funciona | Bolão da Virada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="banner">
+      <img src="assets/banner.jpg" width="1402" height="1122" alt="Bolão da Virada" />
+      <a class="icone-redondo esq" href="index.html" aria-label="Voltar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </a>
+    </div>
+
+    <div class="cartao-titulo">
+      <h1>Escolha seu grupo</h1>
+      <div class="linha-verde">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Participar leva menos de 1 minuto
+      </div>
+      <p>Clique em um grupo e você será levado ao site oficial da rifa para garantir seus números.</p>
+    </div>
+
+    <div class="conteudo">
+      <h2 id="grupos-titulo">Grupos</h2>
+      <div class="grupos" id="grupos"></div>
+
+      <p class="aviso">Participação permitida apenas para maiores de 18 anos.</p>
+    </div>
+  </div>
+
+  <script src="assets/config.js"></script>
+  <script>
+    const cfg = window.BOLAO_CONFIG;
+    const lista = document.getElementById("grupos");
+
+    cfg.grupos.forEach((g, i) => {
+      const a = document.createElement("a");
+      const temLink = g.link && g.link !== "#";
+      a.className = "grupo" + (temLink ? "" : " pendente");
+      a.href = temLink ? g.link : "#";
+      if (temLink && cfg.abrirEmNovaAba) { a.target = "_blank"; a.rel = "noopener"; }
+      if (!temLink) {
+        a.addEventListener("click", (e) => e.preventDefault());
+        a.title = "Link ainda não configurado";
+      }
+      a.innerHTML = `
+        <div class="g-corpo">
+          <div class="g-nome">${g.nome}</div>
+          <div class="g-sub">Grupo ${String(i + 1).padStart(2, "0")} de ${cfg.grupos.length}</div>
+        </div>
+        <div class="g-cta">${temLink ? "Participar →" : "Em breve"}</div>`;
+      lista.appendChild(a);
+    });
+  </script>
+</body>
+</html>
