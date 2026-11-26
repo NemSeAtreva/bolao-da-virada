@@ -19,5 +19,5 @@ window.BOLAO_CONFIG = {
   ],
 
   // true = abre o site da rifa em nova aba; false = abre na mesma aba
-  abrirEmNovaAba: true,
+  abrirEmNovaAba: false,
 };
