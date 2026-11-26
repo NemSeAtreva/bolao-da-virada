@@ -10,51 +10,40 @@
   <meta property="og:image" content="https://bolaotaigo.netlify.app/assets/banner.jpg?v=2" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,700;0,800;0,900;1,900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=13" />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css?v=14" />
 </head>
 <body>
-
-  <div class="app">
-    <img class="capa" src="assets/banner.jpg?v=2" width="1402" height="1122"
+  <main class="pagina">
+    <img class="banner" src="assets/banner.jpg?v=2" width="1402" height="1122"
          alt="Bolão da Virada: participe do nosso bolão. Garanta já seu número!" />
 
-    <div class="cartao">
-      <h1>Bolão da Virada</h1>
-      <div class="linha-verde">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        Um dos 5 grupos é vencedor garantido
-      </div>
-      <div class="linha-verde">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        E você continua participando da ação principal
-      </div>
+    <section class="chamada">
+      <div class="kicker">Bolão da Virada</div>
+      <h1 class="titulo">R$ 50 mil<br /><span class="ouro">pro grupo vencedor</span></h1>
+      <p>Um dos <b>5 grupos</b> ganha com certeza. E você <b>continua participando da ação principal</b> com as mesmas cotas.</p>
+    </section>
+
+    <div class="numeros">
+      <div class="numero"><strong>5</strong><span>grupos</span></div>
+      <div class="numero"><strong class="ouro">1 em 5</strong><span>chance do grupo</span></div>
+      <div class="numero"><strong>200</strong><span>cotas mínimas</span></div>
     </div>
 
-    <div class="conteudo">
-      <div class="preco">
-        <div class="rotulo">Prêmio do bolão:</div>
-        <div class="valor"><small>R$</small>50.000,00</div>
-        <div class="obs">Concorra a dois prêmios com as mesmas cotas!</div>
-      </div>
-
-      <div class="blocos">
-        <div class="bloco-preto"><strong>5</strong><span>grupos</span></div>
-        <div class="bloco-preto"><strong>200</strong><span>cotas mínimas</span></div>
-      </div>
-
+    <section class="secao">
+      <div class="kicker">Passo a passo</div>
       <h2>Como funciona</h2>
-      <div class="linhas">
-        <div class="linha"><span class="pill">1</span>Escolha um dos 5 grupos e clique em participar.</div>
-        <div class="linha"><span class="pill">2</span>Na página da ação, compre no mínimo 200 cotas.</div>
-        <div class="linha"><span class="pill">3</span>Suas cotas valem para o prêmio principal e para o bolão.</div>
-        <div class="linha"><span class="pill">4</span>Um grupo vence e divide os R$ 50 mil entre seus participantes.</div>
+      <div class="passos">
+        <div class="passo"><span class="n">1</span><span>Escolha um dos 5 grupos e clique em participar.</span></div>
+        <div class="passo"><span class="n">2</span><span>Na página da ação, compre no mínimo <b>200 cotas</b>.</span></div>
+        <div class="passo"><span class="n">3</span><span>Suas cotas valem para o <b>prêmio principal</b> e para o <b>bolão</b>.</span></div>
+        <div class="passo"><span class="n">4</span><span>Um grupo vence e os <b>R$ 50 mil</b> são divididos entre os participantes dele.</span></div>
       </div>
+    </section>
 
-      <h2>Por que entrar no bolão?</h2>
-      <p class="texto-corrido">Comprando sozinho, você concorre só ao prêmio da ação. No bolão, os R$ 50 mil saem <b>com certeza</b> para um dos 5 grupos. Ou seja, seu grupo tem <b>1 chance em 5</b> de ganhar.</p>
-
-      <h2>Dúvidas</h2>
+    <section class="secao">
+      <div class="kicker">Ficou na dúvida?</div>
+      <h2>Perguntas</h2>
       <div class="faq">
         <details>
           <summary>Posso comprar menos de 200 cotas?</summary>
@@ -73,17 +62,19 @@
           <p>Os R$ 50 mil vão para o grupo vencedor e são divididos entre todos os participantes desse grupo.</p>
         </details>
       </div>
+    </section>
 
-      <p class="aviso">Proibida a participação de menores de 18 anos.</p>
-    </div>
-  </div>
+    <div class="cta-texto">Escolhe seu grupo <span class="ouro">e tá concorrendo</span></div>
+    <span class="seta">↓</span>
+    <a class="btn" href="como-funciona.html">Quero participar</a>
 
-  <div class="barra-fixa">
+    <p class="aviso">Proibida a participação de menores de 18 anos.</p>
+  </main>
+
+  <div class="barra">
     <div class="dentro">
-      <a class="btn" href="como-funciona.html">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12 11 15 16 9"/></svg>
-        Quero participar
-      </a>
+      <span class="info">Bolão de <span class="ouro">R$ 50 mil</span></span>
+      <a class="btn" href="como-funciona.html">Quero participar</a>
     </div>
   </div>
 </body>

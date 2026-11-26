@@ -6,32 +6,24 @@
   <title>Escolha seu grupo | Bolão da Virada</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,700;0,800;0,900;1,900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=13" />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css?v=14" />
 </head>
-<body>
+<body class="sem-barra">
+  <main class="pagina">
+    <img class="banner" src="assets/banner.jpg?v=2" width="1402" height="1122" alt="Bolão da Virada" />
 
-  <div class="app">
-    <img class="capa" src="assets/banner.jpg?v=2" width="1402" height="1122" alt="Bolão da Virada" />
+    <section class="chamada">
+      <h1 class="titulo">Escolhe seu grupo<br /><span class="ouro">e tá concorrendo</span></h1>
+      <p>Ao clicar, você vai direto para a página da ação. Lembre-se: o pedido mínimo é de <b>200 cotas</b>.</p>
+    </section>
 
-    <div class="cartao">
-      <h1>Escolha seu grupo</h1>
-      <div class="linha-verde">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        Participar leva menos de 1 minuto
-      </div>
-      <p>Ao clicar, você vai direto para a página da ação. Lembre-se: mínimo de <b>200 cotas</b>.</p>
-    </div>
+    <span class="seta">↓</span>
+    <div class="grupos" id="grupos"></div>
 
-    <div class="conteudo">
-      <h2>Grupos disponíveis</h2>
-      <div class="grupos" id="grupos"></div>
-
-      <a class="link-voltar" href="index.html">‹ Voltar para o início</a>
-
-      <p class="aviso">Proibida a participação de menores de 18 anos.</p>
-    </div>
-  </div>
+    <a class="voltar" href="index.html">‹ Voltar para o início</a>
+    <p class="aviso">Proibida a participação de menores de 18 anos.</p>
+  </main>
 
   <script src="assets/config.js?v=2"></script>
   <script>
@@ -51,7 +43,6 @@
       a.innerHTML = `
         <span class="g-rotulo">GRUPO</span>
         <span class="g-num">${String(i + 1).padStart(2, "0")}</span>
-        <span class="g-premio">Concorre a <b>R$ 50 mil</b></span>
         <span class="g-cta">${temLink ? "Participar" : "Em breve"}</span>`;
       lista.appendChild(a);
     });
