@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=6" />
+  <link rel="stylesheet" href="assets/style.css?v=7" />
 </head>
 <body>
   <header class="topo">
@@ -28,7 +28,7 @@
     </div>
 
     <div class="conteudo">
-      <h2>👥 Grupos</h2>
+      <h2>Grupos disponíveis</h2>
       <div class="grupos" id="grupos"></div>
 
       <p class="aviso">Proibida a participação de menores de 18 anos.</p>
@@ -40,7 +40,7 @@
     const cfg = window.BOLAO_CONFIG;
     const lista = document.getElementById("grupos");
 
-    cfg.grupos.forEach((g) => {
+    cfg.grupos.forEach((g, i) => {
       const a = document.createElement("a");
       const temLink = g.link && g.link !== "#";
       a.className = "grupo" + (temLink ? "" : " pendente");
@@ -51,7 +51,9 @@
         a.title = "Link ainda não configurado";
       }
       a.innerHTML = `
-        <span class="g-nome">${g.nome}</span>
+        <span class="g-rotulo">GRUPO</span>
+        <span class="g-num">${String(i + 1).padStart(2, "0")}</span>
+        <span class="g-premio">Concorre a <b>R$ 50 mil</b></span>
         <span class="g-cta">${temLink ? "Participar" : "Em breve"}</span>`;
       lista.appendChild(a);
     });
