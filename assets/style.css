@@ -131,7 +131,6 @@ a { color: inherit; text-decoration: none; }
 .grupo:hover { border-color: var(--verde); box-shadow: 0 4px 14px rgba(0, 153, 110, 0.12); }
 .grupo .g-corpo { padding: 12px; }
 .grupo .g-nome { font-size: 18px; font-weight: 700; color: var(--titulo); }
-.grupo .g-sub { font-size: 13px; }
 .grupo .g-cta {
   margin-top: auto;
   background: var(--verde-suave);
