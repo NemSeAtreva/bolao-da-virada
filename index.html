@@ -10,97 +10,77 @@
   <meta property="og:image" content="https://nemseatreva.github.io/bolao-da-virada/assets/banner.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=3" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css?v=4" />
 </head>
 <body>
   <div class="app">
-    <header class="topbar"><a class="marca" href="index.html">Bolão da <span>Virada</span></a></header>
-    <div class="banner">
-      <img src="assets/banner.jpg" width="1402" height="1122"
-           alt="Bolão da Virada: participe do nosso bolão. Jogue em grupo, aumente suas chances e compartilhe a emoção. Garanta já seu número!" />
-      <button class="icone-redondo dir" id="compartilhar" aria-label="Compartilhar">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
-      </button>
-    </div>
+    <header class="topo">
+      <a class="marca" href="index.html">BOLÃO DA VIRADA</a>
+    </header>
 
-    <div class="cartao-titulo">
-      <h1>Bolão da Virada: concorra a R$ 50 mil com vencedor garantido!</h1>
-      <div class="linha-verde">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        Um dos 5 grupos ganha com certeza
-      </div>
-      <p>Compre suas cotas pelo link do seu grupo e concorra a dois prêmios ao mesmo tempo.</p>
-    </div>
+    <img class="banner" src="assets/banner.jpg" width="1402" height="1122"
+         alt="Bolão da Virada: participe do nosso bolão. Jogue em grupo, aumente suas chances e compartilhe a emoção. Garanta já seu número!" />
 
-    <div class="conteudo">
-      <div class="destaques">
-        <div class="destaque"><strong>R$ 50 mil</strong><span>prêmio do bolão</span></div>
-        <div class="destaque"><strong>1 em 5</strong><span>chance do seu grupo</span></div>
-        <div class="destaque"><strong>200</strong><span>cotas para entrar</span></div>
+    <section class="bloco">
+      <h1>Bolão da Virada</h1>
+      <p>Compre 200 cotas pelo link do seu grupo e concorra a dois prêmios: o prêmio principal da ação e o prêmio do bolão.</p>
+
+      <div class="premio">
+        <div class="rotulo">Prêmio do bolão</div>
+        <div class="valor"><small>R$</small>50.000,00</div>
+        <div class="obs">Dividido entre os participantes do grupo vencedor.</div>
       </div>
 
+      <div class="info">
+        <span>5 grupos</span>
+        <span>1 grupo vencedor garantido</span>
+        <span>Mínimo de 200 cotas</span>
+      </div>
+    </section>
+
+    <section class="bloco">
       <h2>Como funciona</h2>
-      <div class="passos">
-        <div class="passo">
-          <div class="num">1</div>
-          <div><h3>Escolha seu grupo</h3><p>São 5 grupos. Escolha um e clique em participar.</p></div>
-        </div>
-        <div class="passo">
-          <div class="num">2</div>
-          <div><h3>Compre 200 cotas</h3><p>Você vai direto para a página da ação. O pedido mínimo para entrar no bolão é de <b>200 cotas</b>.</p></div>
-        </div>
-        <div class="passo">
-          <div class="num">3</div>
-          <div><h3>Concorra em dobro</h3><p>Suas cotas valem para o <b>prêmio principal da ação</b> e também para o <b>bolão de R$ 50 mil</b>.</p></div>
-        </div>
-        <div class="passo">
-          <div class="num">4</div>
-          <div><h3>Um grupo leva tudo</h3><p>Um dos 5 grupos é o vencedor, e os R$ 50 mil são divididos entre os participantes dele.</p></div>
-        </div>
-      </div>
+      <ol class="passos">
+        <li><span>Escolha um dos 5 grupos e clique em <b>Participar</b>.</span></li>
+        <li><span>Você vai para a página da ação. Compre no mínimo <b>200 cotas</b>.</span></li>
+        <li><span>Suas cotas valem para o prêmio principal da ação e também para o bolão.</span></li>
+        <li><span>Um dos 5 grupos vai ser o vencedor. Os R$ 50 mil são divididos entre os participantes desse grupo.</span></li>
+      </ol>
+    </section>
 
-      <div class="caixa-destaque">
-        <strong>Por que entrar no bolão?</strong>
-        <p>Na ação, você concorre sozinho. No bolão, o prêmio de R$ 50 mil <b>com certeza</b> vai para um dos 5 grupos. Ou seja, o seu grupo tem <b>1 chance em 5</b> de ganhar, e você ainda continua concorrendo ao prêmio principal.</p>
-      </div>
+    <section class="bloco">
+      <h2>Por que entrar no bolão?</h2>
+      <p>Comprando sozinho, você concorre só ao prêmio da ação. No bolão, o prêmio de R$ 50 mil sai com certeza para um dos 5 grupos. Ou seja, o seu grupo tem 1 chance em 5 de ganhar.</p>
+    </section>
 
-      <h2>Dúvidas frequentes</h2>
-      <div class="faq">
-        <details>
-          <summary>Posso comprar menos de 200 cotas?</summary>
-          <p>Não. Para participar do bolão, o pedido mínimo é de 200 cotas. Você pode comprar mais, se quiser.</p>
-        </details>
-        <details>
-          <summary>Preciso comprar pelo link do grupo?</summary>
-          <p>Sim. É o link do grupo que identifica de qual grupo você faz parte. Compras feitas por fora não entram no bolão.</p>
-        </details>
-        <details>
-          <summary>Continuo concorrendo ao prêmio principal da ação?</summary>
-          <p>Sim. Suas 200 cotas valem normalmente para o prêmio principal. O bolão é um prêmio a mais.</p>
-        </details>
-        <details>
-          <summary>Como o prêmio do bolão é dividido?</summary>
-          <p>Os R$ 50 mil vão para o grupo vencedor e são divididos entre todos os participantes desse grupo.</p>
-        </details>
-      </div>
+    <section class="bloco faq">
+      <h2>Dúvidas</h2>
+      <details>
+        <summary>Posso comprar menos de 200 cotas?</summary>
+        <p>Não. Para entrar no bolão, o pedido mínimo é de 200 cotas. Se quiser, pode comprar mais.</p>
+      </details>
+      <details>
+        <summary>Preciso comprar pelo link do grupo?</summary>
+        <p>Sim. É pelo link que a gente sabe de qual grupo você faz parte. Compras feitas por fora não entram no bolão.</p>
+      </details>
+      <details>
+        <summary>Continuo concorrendo ao prêmio principal?</summary>
+        <p>Sim. Suas cotas valem normalmente para o prêmio principal da ação. O bolão é um prêmio a mais.</p>
+      </details>
+      <details>
+        <summary>Como o prêmio do bolão é dividido?</summary>
+        <p>Os R$ 50 mil vão para o grupo vencedor e são divididos entre todos os participantes desse grupo.</p>
+      </details>
+    </section>
 
-      <p class="aviso">Participação permitida apenas para maiores de 18 anos.</p>
-    </div>
+    <p class="aviso">Proibida a participação de menores de 18 anos.</p>
   </div>
 
   <div class="barra-fixa">
     <div class="dentro">
-      <a class="btn-laranja" href="como-funciona.html">Quero participar</a>
+      <a class="btn" href="como-funciona.html">Participar</a>
     </div>
   </div>
-
-  <script>
-    document.getElementById("compartilhar").addEventListener("click", async () => {
-      const dados = { title: document.title, url: location.href };
-      if (navigator.share) { try { await navigator.share(dados); } catch (e) {} }
-      else { navigator.clipboard?.writeText(location.href); }
-    });
-  </script>
 </body>
 </html>
